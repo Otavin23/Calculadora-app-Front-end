@@ -31,7 +31,7 @@ export function CalculadoraProvider({ children }) {
        if(el.includes("*")){
           const multi = a * b 
           setNumber(multi)
-          console.log("aTUALIZADO")
+          console.log("aTUALIZADO2")
        }
     })
 
