@@ -19,12 +19,17 @@ export function CalculadoraProvider({ children }) {
     const a = resultado.substring(0, index);
     const b = resultado.substring(index + 2);
 
+    console.log(a);
+    console.log(b);
+
     transformArray.map((el) => {
       if (el.includes("*")) {
-        const multi = a * b;
-        setNumber(multi);
-      }if (el.includes("/")){
-
+        setNumber(a * b);
+      }
+      console.log(el);
+      if (el.includes("/")) {
+        console.log("Entru aqui");
+        setNumber(a / b);
       }
     });
   }
