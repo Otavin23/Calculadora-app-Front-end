@@ -10,6 +10,7 @@ export function CalculadoraProvider({ children }) {
   const DeletNumber = () => setNumber(number.slice(0, -1));
   const ResetNumber = () => setNumber("");
 
+
   function ResultNumber() {
     const resultado = number;
     const transformArray = resultado.split("");
@@ -48,6 +49,7 @@ export function CalculadoraProvider({ children }) {
     DeletNumber,
     ResetNumber,
     ResultNumber,
+    setNumber,
   };
 
   return (
