@@ -11,25 +11,33 @@ export function CalculadoraProvider({ children }) {
   const ResetNumber = () => setNumber("");
 
   function ResultNumber() {
-    const resultado = number.replace("x", ",*");
+    const resultado = number;
     const transformArray = resultado.split("");
 
-    const index = resultado.indexOf(",");
-
-    const a = resultado.substring(0, index);
-    const b = resultado.substring(index + 2);
-
-    console.log(a);
-    console.log(b);
-
     transformArray.map((el) => {
-      if (el.includes("*")) {
+      if (el.includes("x")) {
+        const index = resultado.indexOf("x");
+        const a = Number(resultado.substring(0, index));
+        const b = Number(resultado.substring(index + 1));
         setNumber(a * b);
       }
-      console.log(el);
       if (el.includes("/")) {
-        console.log("Entru aqui");
+        const index = resultado.indexOf("/");
+        const a = Number(resultado.substring(0, index));
+        const b = Number(resultado.substring(index + 1));
         setNumber(a / b);
+      }
+      if (el.includes("+")) {
+        const index = resultado.indexOf("+");
+        const a = Number(resultado.substring(0, index));
+        const b = Number(resultado.substring(index + 1));
+        setNumber(a + b);
+      }
+      if (el.includes("-")) {
+        const index = resultado.indexOf("-");
+        const a = Number(resultado.substring(0, index));
+        const b = Number(resultado.substring(index + 1));
+        setNumber(a - b);
       }
     });
   }
