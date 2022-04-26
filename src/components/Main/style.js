@@ -8,6 +8,27 @@ export const MainFundo = styled.main`
 export const Container = styled.div`
   max-height: 100%;
   width: 390px;
+  @media (max-width: 402px) {
+    max-width: 300px;
+  }
+  @media (max-width: 425px) {
+    max-width: 300px;
+  }
+  @media (max-width: 376px) {
+    max-width: 340px;
+  }
+  @media (max-width: 338px) {
+    max-width: 310px;
+  }
+  @media (max-width: 381px) {
+    max-width: 285px;
+  }
+  @media (max-width: 338px) {
+    max-width: 265px;
+  }
+  @media (max-width: 379px) {
+    max-width: 270px;
+  }
   header {
     height: 10%;
     display: flex;
@@ -46,25 +67,25 @@ export const Container = styled.div`
           #s-theme {
             margin: 0;
           }
-          button{
-             border: none;
-             color: ${props => props.theme.colors.colorFont};
-             font-weight: 700;
-             cursor: pointer;
-             background: transparent;
+          button {
+            border: none;
+            color: ${(props) => props.theme.colors.colorFont};
+            font-weight: 700;
+            cursor: pointer;
+            background: transparent;
           }
         }
         .theme-se {
           display: flex;
           align-items: center;
-          justify-content: ${props => props.theme.typeFlex.flexStart};
+          justify-content: ${(props) => props.theme.typeFlex.flexStart};
           width: 100%;
-          background: ${props => props.theme.typeFlex.ballFundo};
+          background: ${(props) => props.theme.typeFlex.ballFundo};
           height: 1.5rem;
           border-radius: 1rem;
           transition: all 0.05s ease-out;
           .ball-theme {
-            background: ${props => props.theme.typeFlex.ball};
+            background: ${(props) => props.theme.typeFlex.ball};
             width: 17px;
             height: 17px;
             border-radius: 50%;
@@ -111,6 +132,39 @@ export const Container = styled.div`
       height: 85%;
       display: flex;
       flex-direction: column;
+      @media (max-width: 376px) {
+        max-width: 320px;
+      }
+      @media (max-width: 379px) {
+        max-width: 320px;
+      }
+      @media (max-width: 338px) {
+        max-width: 290px;
+      }
+      @media (max-width: 381px) {
+        max-width: 240px;
+        height: 300px;
+      }
+      @media (max-width: 402px) {
+        max-width: 270px;
+        height: 300px;
+      }
+      @media (max-width: 338px) {
+        max-width: 230px;
+        height: 300px;
+      }
+      @media (max-width: 379px) {
+        max-width: 240px;
+      }
+      @media (max-width: 425px) {
+        max-width: 270px;
+        height: 300px;
+      }
+      @media (max-width: 379px) {
+        max-width: 240px;
+        height: 300px;
+        border-radius: 0.3rem;
+      }
       div {
         display: flex;
         justify-content: space-between;
@@ -121,17 +175,36 @@ export const Container = styled.div`
 export const ButtonCalc = styled.button`
   width: 75px;
   height: 45px;
+  @media (max-width: 402px) {
+    width: 60px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 425px) {
+    width: 60px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 338px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 381px) {
+    max-width: 50px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
   border: none;
   font-size: 1.7rem;
   margin-bottom: 1rem;
-  color: ${props => props.theme.colors.colorFonts};
+  color: ${(props) => props.theme.colors.colorFonts};
   background-color: ${(props) => props.theme.colors.key};
   border-radius: 0.5rem;
   border-bottom: 2px solid ${(props) => props.theme.colors.keyShadow};
   cursor: pointer;
   box-shadow: 0px 1px 3px solid ${(props) => props.theme.colors.keyShadow};
   font-weight: 700;
-
 `;
 export const ButtonDelReset = styled.button`
   border: none;
@@ -147,6 +220,26 @@ export const ButtonDelReset = styled.button`
   cursor: pointer;
   text-transform: uppercase;
   font-weight: 700;
+  @media (max-width: 338px) {
+    width: 60px;
+    height: 60px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 402px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 379px) {
+    max-width: 100px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 425px) {
+    width: 50px;
+    height: 50px;
+    border-radius: 0.3rem;
+  }
 `;
 export const buttonReset = styled.button`
   text-transform: uppercase;
@@ -154,21 +247,62 @@ export const buttonReset = styled.button`
   height: 2.8rem;
   border-radius: 0.5rem;
   border: none;
-  border-bottom: 2px solid ${props => props.theme.colors.delShadow};
-  background: ${props => props.theme.colors.delRest};
-  color: ${props => props.theme.colors.delColor};
+  border-bottom: 2px solid ${(props) => props.theme.colors.delShadow};
+  background: ${(props) => props.theme.colors.delRest};
+  color: ${(props) => props.theme.colors.delColor};
   font-size: 1rem;
   letter-spacing: 1px;
   font-weight: 700;
+
+  @media (max-width: 338px) {
+    width: 110px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 402px) {
+    width: 130px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 381px) {
+    max-width: 115px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 425px) {
+    width: 130px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
 `;
 export const ButtonResult = styled.button`
   width: 48%;
-  background: ${props => props.theme.colors.backResult};
+  background: ${(props) => props.theme.colors.backResult};
   height: 2.8rem;
   border: none;
   border-radius: 0.5rem;
   font-size: 1rem;
   color: white;
-  border-bottom: 2px solid ${props => props.theme.colors.backShadow};
-  font-weight:700;
+  border-bottom: 2px solid ${(props) => props.theme.colors.backShadow};
+  font-weight: 700;
+  @media (max-width: 338px) {
+    width: 110px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 381px) {
+    max-width: 115px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 402px) {
+    width: 130px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
+  @media (max-width: 425px) {
+    width: 130px;
+    height: 45px;
+    border-radius: 0.3rem;
+  }
 `;
