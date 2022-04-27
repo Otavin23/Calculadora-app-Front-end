@@ -1,6 +1,7 @@
 <h1>Project Frontend Mentor-Calculator app</h1>
 
-<h2>Objetivo do projeto, mostrar uma forma de conseguir fazer uma calculadora básica.<h2>
+<h2>Objective of the project, to show a way to make a basic calculator.<h2>
+
 
  
 ![ConverterGif](https://user-images.githubusercontent.com/90516567/165412498-4c7563a1-8f44-44e6-bd55-5302ef38eada.gif)
